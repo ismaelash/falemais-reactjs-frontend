@@ -95,7 +95,7 @@ const App = () => {
       <ol>
         <li> <a href="" >CRUD origem e destino</a></li>
         <li> <a href="" >CRUD Plano</a></li>
-        <li> <a href="github.com/ismaelash/falemais-node-backend" >Github</a></li>
+        <li> <a href="https://github.com/ismaelash/falemais-node-backend" >Github</a></li>
         <li> <a href="https://www.ismaelnascimento.com/" >Contatos</a></li>
       </ol>
       <br />
