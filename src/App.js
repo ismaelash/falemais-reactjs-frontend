@@ -1,5 +1,6 @@
 import React, { useEffect, Fragment, useState } from "react";
 import axios from "axios";
+import { ENDPOINT_GET_ALL_ORIGINDESTINY, ENDPOINT_GET_ALL_PLAN } from "./constants";
 
 const App = () => {
   const [originDestinys, setOriginDestinys] = useState([]);
@@ -13,9 +14,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get(
-        "https://9fizt2qd49.execute-api.us-east-1.amazonaws.com/get-all-origindestiny"
-      )
+      .get(ENDPOINT_GET_ALL_ORIGINDESTINY)
       .then(function (response) {
         setOriginDestinys(response.data);
       })
@@ -24,9 +23,7 @@ const App = () => {
       });
 
     axios
-      .get(
-        "https://9fizt2qd49.execute-api.us-east-1.amazonaws.com/get-all-plan"
-      )
+      .get(ENDPOINT_GET_ALL_PLAN)
       .then(function (response) {
         setPlans(response.data);
       })
@@ -96,10 +93,10 @@ const App = () => {
       <h1>VX FaleMais</h1>
       <h2>Menu</h2>
       <ol>
-        <li> <a>Cadastrar/Atualizar origem e destino</a></li>
-        <li> <a>Cadastrar/Atualizar Plano</a></li>
-        <li>  <a>Excluir origem e destino</a></li>
-        <li>   <a>Excluir Plano</a></li>
+        <li> <a href="" >CRUD origem e destino</a></li>
+        <li> <a href="" >CRUD Plano</a></li>
+        <li> <a href="github.com/ismaelash/falemais-node-backend" >Github</a></li>
+        <li> <a href="https://www.ismaelnascimento.com/" >Contatos</a></li>
       </ol>
       <br />
       <label>Escolha origem e destino: </label>

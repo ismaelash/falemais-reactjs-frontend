@@ -1,7 +1,7 @@
 import React, { useEffect, Fragment, useState } from "react";
 import axios from "axios";
 
-const CUOriginDestiny = () => {
+const CRUDOriginDestiny = () => {
   const [originDestinys, setOriginDestinys] = useState([]);
   const [originDestinysSelected, setOriginDestinysSelected] = useState(null);
   const [plans, setPlans] = useState([]);
@@ -98,7 +98,7 @@ const CUOriginDestiny = () => {
 
   return (
     <Fragment>
-      <h1>CUD OriginDestiny - VX FaleMais</h1>
+      <h1>CRUD OriginDestiny - VX FaleMais</h1>
       <h2>Menu</h2>
       <h3>Instructions</h3>
       <span>CUD = Create, Update, Delete</span>
@@ -174,4 +174,4 @@ const CUOriginDestiny = () => {
   );
 };
 
-export default CUOriginDestiny;
+export default CRUDOriginDestiny;
