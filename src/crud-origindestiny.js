@@ -98,7 +98,7 @@ const CRUDOriginDestiny = () => {
 
   return (
     <Fragment>
-      <h1>CRUD OriginDestiny - VX FaleMais</h1>
+      <h1>CRUD OriginDestiny - VX FaleMais </h1>
       <h2>Menu</h2>
       <h3>Instructions</h3>
       <span>CUD = Create, Update, Delete</span>
